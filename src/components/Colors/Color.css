@@ -1,0 +1,95 @@
+.container {
+    margin: 25px;
+}
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 25px
+}
+
+.colorCard {
+    height: 260px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 40px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 5px 5px 40px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 5px 5px 40px 0px rgba(34, 34, 34, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.colorName {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.color {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+}
+
+.color:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 9;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.colorCode {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 0.8em;
+    opacity: .25;
+}
+
+.copyCode {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-weight: 600;
+    font-size: 0.8em;
+    cursor: pointer;
+    opacity: .25;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.copyCode:hover {
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
