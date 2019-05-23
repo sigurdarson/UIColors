@@ -18,13 +18,36 @@ header {
   .headerContainer {
     max-width: 1200px;
     margin: 0 auto;
+    animation: headerIn 1s forwards;
+    opacity: 0;
   }
   
   .logo {
     margin: 1em 0;
     float: left;
-    animation: headerIn 1s forwards;
-    opacity: 0;
+  }
+
+  h1 {
+    animation: flow 3s ease-in-out infinite;
+    background: linear-gradient(-60deg, #8C13FC, #DD3CBE, #e73c7e, #FF5D1F);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes flow {
+    0% {
+      background-position: 0 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0 50%;
+    }
   }
   
   nav {
@@ -44,17 +67,20 @@ header {
     cursor: pointer;
     animation: headerIn 1s .4s forwards;
     opacity: 0;
+    font-weight: 600;
   }
   
   li::before {
     content: '';
-    background-color: #222222;
+    background: linear-gradient(-60deg, #8C13FC, #DD3CBE, #e73c7e, #FF5D1F);
+    animation: flow 3s ease-in-out infinite;
+    background-size: 300%;
     position: absolute;
     top: 100%;
     margin-top: -0.5px;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 3px;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
