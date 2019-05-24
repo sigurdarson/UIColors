@@ -18,3 +18,54 @@ h3,
 h4 {
   font-weight: 600;
 }
+
+/* Success message */
+
+.success {
+  left: 45%;
+  top: 25px;
+  width: 150px;
+  height: 75px;
+  border-radius: 10px;
+  z-index: 99;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  animation: success 1s forwards;
+  font-weight: 600;
+  color: #22222275;
+  display: none;
+  -webkit-box-shadow: 5px 5px 40px 0px rgba(34, 34, 34, 0.1);
+  -moz-box-shadow: 5px 5px 40px 0px rgba(34, 34, 34, 0.1);
+  box-shadow: 5px 5px 40px 0px rgba(34, 34, 34, 0.1);
+}
+
+.removeSuccess {
+  animation: removeSuccess 1s 3s forwards;
+}
+
+@keyframes success {
+  0% {
+  opacity: 0;
+  transform: translateY(-120%)
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0)
+  }
+}
+
+@keyframes removeSuccess {
+  0% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateY(-120%)
+  }
+}

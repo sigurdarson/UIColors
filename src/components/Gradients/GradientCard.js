@@ -2,7 +2,7 @@ import React from "react";
 import './Color.css';
 import { useClipboard } from 'use-clipboard-copy';
 
-function ColorCard(props) {
+function GradientCard(props) {
     const clipboard = useClipboard({
         onSuccess() {
             const copied = document.querySelector(".success");
@@ -51,4 +51,4 @@ function ColorCard(props) {
     );
 }; 
 
-export default ColorCard
+export default GradientCard

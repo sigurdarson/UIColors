@@ -21,7 +21,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    animation: fadeIn .2s forwards;
+    animation: fadeIn 1s forwards;
     opacity: 0;
     background: #ffffff;
 }

@@ -1,9 +1,14 @@
 header {
     height: 100px;
     width: 100%;
-  }
+}
 
-  @keyframes headerIn {
+a { 
+  color: #222222;
+  text-decoration: none;
+}
+
+@keyframes headerIn {
     0% {
       opacity: 0;
       transform: translateY(-20px);
@@ -13,30 +18,30 @@ header {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
   
-  .headerContainer {
+.headerContainer {
     max-width: 1200px;
     margin: 0 auto;
     animation: headerIn 1s forwards;
     opacity: 0;
-  }
+}
   
-  .logo {
+.logo {
     margin: 1em 0;
     float: left;
-  }
+}
 
-  h1 {
+h1 {
     animation: flow 3s ease-in-out infinite;
     background: linear-gradient(-60deg, #8C13FC, #DD3CBE, #e73c7e, #FF5D1F);
     background-size: 300%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
-  @keyframes flow {
+@keyframes flow {
     0% {
       background-position: 0 50%;
     }
@@ -48,19 +53,19 @@ header {
     100% {
       background-position: 0 50%;
     }
-  }
+}
   
-  nav {
+nav {
     float: right;
     margin: 2.5em 0;
-  }
+}
   
-  ul {
+ul {
     list-style: none;
     display: inline-flex;
-  }
+}
   
-  li {
+li {
     margin-left: 25px;
     position: relative;
     display: inline-block;
@@ -68,9 +73,9 @@ header {
     animation: headerIn 1s .4s forwards;
     opacity: 0;
     font-weight: 600;
-  }
+}
   
-  li::before {
+li::before {
     content: '';
     background: linear-gradient(-60deg, #8C13FC, #DD3CBE, #e73c7e, #FF5D1F);
     animation: flow 3s ease-in-out infinite;
@@ -85,9 +90,22 @@ header {
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
   
-  }
+}
   
-  li:hover::before {
+li:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 1230px) {
+  .logo {
+    margin-left: 25px;
   }
+
+  nav {
+    margin-right: 25px;
+  }
+
+}
+
+
