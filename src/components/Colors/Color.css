@@ -46,6 +46,39 @@
     font-size: 0.8em;
 }
 
+.success {
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 99;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #ffffff;
+opacity: 0;
+animation: success 1s forwards;
+font-weight: 600;
+display: none;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes success {
+    0% {
+    opacity: 0;
+    border-radius: 100%
+    }
+
+    100% {
+        opacity: .5;
+        border-radius: 10px;
+    }
+}
+
 .color {
     cursor: pointer;
     width: 120px;
