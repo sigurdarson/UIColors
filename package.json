@@ -5,11 +5,14 @@
   "dependencies": {
     "@vigosan/react-copy-to-clipboard": "^1.0.0",
     "clipboard": "^2.0.4",
+    "local-storage-fallback": "^4.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "styled-components": "^4.2.0",
+    "styled-theming": "^2.2.0",
     "use-clipboard-copy": "^0.1.0",
     "use-clippy": "^1.0.3"
   },

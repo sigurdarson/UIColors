@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css';
+import ToggleMode from '../Toggle/ToggleMode';
 
 import { Link } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function Header() {
                 <ul>
                     <li><Link to="/">Colors</Link></li>
                     <li><Link to="/Gradients">Gradients</Link></li>
+                    <li><ToggleMode /></li>
                 </ul>
             </nav>
         </div>

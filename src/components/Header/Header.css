@@ -3,11 +3,6 @@ header {
     width: 100%;
 }
 
-a { 
-  color: #222222;
-  text-decoration: none;
-}
-
 @keyframes headerIn {
     0% {
       opacity: 0;
@@ -74,8 +69,17 @@ li {
     opacity: 0;
     font-weight: 600;
 }
+
+/* Link underline effect */
+
+a {
+  position: relative;
+  display: inline-block;
+  color: #222222;
+  text-decoration: none;
+}
   
-li::before {
+a::before {
     content: '';
     background: linear-gradient(-60deg, #8C13FC, #DD3CBE, #e73c7e, #FF5D1F);
     animation: flow 3s ease-in-out infinite;
@@ -92,10 +96,27 @@ li::before {
   
 }
   
-li:hover::before {
+a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+/* light Switch */
+
+.lightSwitch svg {
+  transform: translateY(-2px);
+  opacity: .5;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  }
+  
+  .lightSwitch svg:hover {
+    opacity: 1;
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+  }
 
 @media only screen and (max-width: 1230px) {
   .logo {
