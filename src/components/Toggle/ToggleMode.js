@@ -1,6 +1,5 @@
 import React from 'react';
 import {ThemeConsumer} from 'styled-components';
-import Sun from './toggle.svg';
 
 export default function ToggleMode() {
     return (<ThemeConsumer>{theme => (

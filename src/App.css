@@ -22,14 +22,16 @@ h4 {
 /* Success message */
 
 .success {
-  left: 45%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
   top: 25px;
   width: 150px;
   height: 75px;
   border-radius: 10px;
   z-index: 99;
   position: absolute;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
   background: #ffffff;
@@ -68,4 +70,28 @@ h4 {
       opacity: 0;
       transform: translateY(-120%)
   }
+}
+/* Mobile Menu */
+
+.mobileMenu {
+  height: 25px;
+  width: 100%;
+  display: none;
+}
+
+.mobileMenu nav {
+  float: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mobileMenu li {
+  margin: 0 0px 0 25px;
+}
+
+@media only screen and (max-width: 772px) {
+  .mobileMenu {
+    display: block;
+  }
+
 }

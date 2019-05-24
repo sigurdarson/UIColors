@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css'
 import Header from "./components/Header/Header";
-import ColorSection from "./components/Colors/ColorSection"
-import GradientSection from "./components/Gradients/GradientSection"
+import ColorSection from "./components/Colors/ColorSection";
+import GradientSection from "./components/Gradients/GradientSection";
 import { BrowserRouter, Route } from 'react-router-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import style from 'styled-theming';
 import useTheme from './components/Toggle/useTheme';
+import MobileMenu from './components/MobileMenu';
 
 const getBackground = style('mode', {
   light: '#fafafa',
@@ -19,11 +20,6 @@ const getForeground = style('mode', {
 });
 
 const getColorCard = style('mode', {
-  light: '#ffffff',
-  dark: '#222222'
-});
-
-const getSuccess = style('mode', {
   light: '#ffffff',
   dark: '#222222'
 });
@@ -67,6 +63,7 @@ function App() {
     <GlobalStyle />
     <div>
     <Header />
+    <MobileMenu />
     <div className="success">
       Copied
     </div>

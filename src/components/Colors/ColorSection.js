@@ -79,6 +79,30 @@ function ColorSection() {
                 background= "#3d3d3d"
                 delay= "2.4s"
                 />
+                <ColorCard 
+                name= "Purple Heart"
+                colorcode= "#4D13D1"
+                background= "#4D13D1"
+                delay= "2.6s"
+                />
+                <ColorCard 
+                name= "Light Sea Green"
+                colorcode= "#1ABC9C"
+                background= "#1abc9c"
+                delay= "2.8s"
+                />
+                <ColorCard 
+                name= "Gorse"
+                colorcode= "#FFEB3B"
+                background= "#FFEB3B"
+                delay= "3s"
+                />
+                <ColorCard 
+                name= "Flamingo"
+                colorcode= "#FF4426"
+                background= "#FF4426"
+                delay= "3.2s"
+                /> 
             </div>
         </section>
     );

@@ -109,14 +109,14 @@ a:hover::before {
   transition: 0.5s ease-out;
   -webkit-transition: 0.5s ease-out;
   -moz-transition: 0.5s ease-out;
-  }
+}
   
-  .lightSwitch svg:hover {
+.lightSwitch svg:hover {
     opacity: 1;
     transition: 0.5s ease-out;
     -webkit-transition: 0.5s ease-out;
     -moz-transition: 0.5s ease-out;
-  }
+}
 
 @media only screen and (max-width: 1230px) {
   .logo {
@@ -129,4 +129,9 @@ a:hover::before {
 
 }
 
+@media only screen and (max-width: 772px) {
+  .desktopItem {
+    display: none;
+  }
 
+}

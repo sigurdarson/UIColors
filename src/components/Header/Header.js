@@ -11,8 +11,8 @@ function Header() {
             <h1 className="logo">UIColors.io</h1>
             <nav>
                 <ul>
-                    <li><Link to="/">Colors</Link></li>
-                    <li><Link to="/Gradients">Gradients</Link></li>
+                    <li className="desktopItem"><Link to="/">Colors</Link></li>
+                    <li className="desktopItem"><Link to="/Gradients">Gradients</Link></li>
                     <li><ToggleMode /></li>
                 </ul>
             </nav>
