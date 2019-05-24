@@ -79,57 +79,6 @@ function ColorSection() {
                 background= "#3d3d3d"
                 delay= "2.4s"
                 />
-
-                <ColorCard 
-                name= "Fiord"
-                colorcode= "#445166"
-                background= "#445166"
-                delay= "2.6s"
-                />
-                <ColorCard 
-                name= "Cryon Orange"
-                colorcode= "#FF5D1F"
-                background= "#FF5D1F"
-                delay= "2.8s"
-                />
-                <ColorCard 
-                name= "Watermelon"
-                colorcode= "#ff4757"
-                background= "#ff4757"
-                delay= "3s"
-                />
-                <ColorCard 
-                name= "Baltic Sea"
-                colorcode= "#3d3d3d"
-                background= "#3d3d3d"
-                delay= "3.2s"
-                />
-                <ColorCard 
-                name= "Fiord"
-                colorcode= "#445166"
-                background= "#445166"
-                delay= "3.4s"
-                />
-                <ColorCard 
-                name= "Cryon Orange"
-                colorcode= "#FF5D1F"
-                background= "#FF5D1F"
-                delay= "3.6s"
-                />
-                <ColorCard 
-                name= "Watermelon"
-                colorcode= "#ff4757"
-                background= "#ff4757"
-                value= "#ff4757"
-                delay= "3.8s"
-                />
-                <ColorCard 
-                name= "Baltic Sea"
-                colorcode= "#3d3d3d"
-                background= "#3d3d3d"
-                delay= "4s"
-                />
-
             </div>
         </section>
     );
