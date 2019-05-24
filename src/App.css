@@ -22,10 +22,10 @@ h4 {
 /* Success message */
 
 .success {
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   top: 25px;
   width: 150px;
   height: 75px;
@@ -50,27 +50,28 @@ h4 {
 
 @keyframes success {
   0% {
-  opacity: 0;
-  transform: translateY(-120%)
+    opacity: 0;
+    transform: translateY(-120%);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0)
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes removeSuccess {
   0% {
     opacity: 1;
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   100% {
-      opacity: 0;
-      transform: translateY(-120%)
+    opacity: 0;
+    transform: translateY(-120%);
   }
 }
+
 /* Mobile Menu */
 
 .mobileMenu {
@@ -93,5 +94,4 @@ h4 {
   .mobileMenu {
     display: block;
   }
-
 }

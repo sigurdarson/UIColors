@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css'
-import Header from "./components/Header/Header";
-import ColorSection from "./components/Colors/ColorSection";
-import GradientSection from "./components/Gradients/GradientSection";
+import './App.css';
+import Header from './components/Header/Header';
+import ColorSection from './components/Colors/ColorSection';
+import GradientSection from './components/Gradients/GradientSection';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import style from 'styled-theming';
@@ -58,22 +58,20 @@ function App() {
 
   return (
     <BrowserRouter>
-    <ThemeProvider theme={theme}>
-    <>
-    <GlobalStyle />
-    <div>
-    <Header />
-    <MobileMenu />
-    <div className="success">
-      Copied
-    </div>
-    <div>
-    <Route exact path='/' component={ ColorSection } />
-    <Route exact path='/Gradients' component={ GradientSection } />
-    </div>
-    </div>
-    </>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <>
+          <GlobalStyle />
+          <div>
+            <Header />
+            <MobileMenu />
+            <div className='success'>Copied</div>
+            <div>
+              <Route exact path='/' component={ColorSection} />
+              <Route exact path='/Gradients' component={GradientSection} />
+            </div>
+          </div>
+        </>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }
