@@ -25,7 +25,7 @@ function GradientCard(props) {
             style={{ animationDelay: props.delay }}>
         <input 
             ref={clipboard.target}
-            value={props.colorcode}
+            value={props.background}
             style={{display: "none"}}
             readOnly />
         <span 
@@ -40,12 +40,17 @@ function GradientCard(props) {
 
         <span 
             className="colorCode">
-            {props.colorcode}
+            {props.from}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+                <path d="M0-.25h24v24H0z" fill="none"/>
+            </svg>
+            {props.to}
         </span>
         <span
             className="copyCode"
             onClick={clipboard.copy}>
-            Copy HEX
+            Copy CSS
         </span>
     </article>
     );

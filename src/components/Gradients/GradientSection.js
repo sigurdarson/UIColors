@@ -9,26 +9,30 @@ function GradientSection() {
 
                 <GradientCard 
                 name= "Gradient"
-                colorcode= "#4776FF"
-                background= "#4776FF"
+                to= "#E73C7E"
+                from= "#EE7752"
+                background= "linear-gradient(45deg, #e73c7e, #ee7752)"
                 delay= ".2s"
                 />
                 <GradientCard 
-                name= "Dull Magenta"
-                colorcode= "#DD3CBE"
-                background= "#DD3CBE"
+                name= "Gradient"
+                to= "#8C13FC"
+                from= "#DD3CBE"
+                background= "linear-gradient(45deg, #8C13FC, #DD3CBE)"
                 delay= ".4s"
                 />
                 <GradientCard 
-                name= "Electric Violet"
-                colorcode= "#8C13FC"
-                background= "#8C13FC"
+                name= "Gradient"
+                to= "#176AA2"
+                from= "#7596FF"
+                background= "linear-gradient(45deg, #176AA2, #7596FF)"
                 delay= ".6s"
                 />
                 <GradientCard 
-                name= "Mountain Meadow"
-                colorcode= "#25C181"
-                background= "#25C181"
+                name= "Gradient"
+                to= "#75FFDB"
+                from= "#17A246"
+                background= "linear-gradient(45deg, #17A246, #75FFDB)"
                 delay= ".8s"
                 />
             </div>

@@ -21,7 +21,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn .5s forwards;
     opacity: 0;
     background: #ffffff;
 }
@@ -71,13 +71,8 @@
     -moz-transition: 0.5s;
 }
 
-.colorCode {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    font-weight: 600;
-    font-size: 0.8em;
-    opacity: .25;
+.colorCode svg {
+    transform: translateY(5px);
 }
 
 .copyCode {
