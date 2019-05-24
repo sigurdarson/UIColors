@@ -17,16 +17,13 @@ function ColorCard(props) {
         </span>
         <div
             className="color"
-            style={{background: props.background}}>
+            style={{background: props.background}}
+            onClick={() => {setClipboard(props.colorcode);}}>
         </div>
 
         <span 
             className="colorCode">
             {props.colorcode}
-        </span>
-        <span
-            className="copyCode">
-            Copy HEX
         </span>
         <span
             className="copyCode"
